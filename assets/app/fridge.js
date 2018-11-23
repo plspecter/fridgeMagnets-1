@@ -48,7 +48,7 @@ $(document).ready(function() {
         // attr acts as both a setter and a getter for attributes depending on whether we supply one argument or two
         // NOTE: There IS a $(data) jQuery method, but it doesn't do what you'd expect. So just use attr.
 
-        fridgeMagnet.text($(this).atter("data-letter"));
+        fridgeMagnet.text($(this).attr("data-letter"));
 
         //11.Append the fridgeMagnet variable to the #display div 
         $("#display").append(fridgeMagnet);
