@@ -1,5 +1,6 @@
 body {
-    background: url(assets/fridge.png) no-repeat;
+    background: url(assets/fridge-1.png) no-repeat;
+    background-color: yellow;
   }
 
   .letter {

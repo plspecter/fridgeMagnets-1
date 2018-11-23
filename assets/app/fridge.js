@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    console.log("connected");
 
     //Provide the inital array of letters the user can choose from (the keyboard)
     var letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "_"];
