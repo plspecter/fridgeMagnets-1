@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
     console.log("connected");
 
     //Provide the inital array of letters the user can choose from (the keyboard)
@@ -10,34 +10,34 @@ $(document).ready(function() {
         //When it iterates through the array..
         //(when you press on a key)
 
-    //It creates a variable named "letterBtn"..
-    //Which is now a button tag (<button>)
-    var letterBtn = $("<button>")
+        //It creates a variable named "letterBtn"..
+        //Which is now a button tag (<button>)
+        var letterBtn = $("<button>")
 
-    //* ADDING A CLASS */
-    //Then give each "letterBtn" the following classes: "letter-button" "letter" "letter-button-color".
-    //The classes make it so we are able to use them and target additional attributes
-    letterBtn.addClass("letter-button letter letter-button-color");
-    
-    //* ADDING AN ATTRIBUTE /
-    //Now we are giving letterBtn a data-attribute called "data-letter".
-    letterBtn.attr("data-letter", letters[i]);
+        //* ADDING A CLASS */
+        //Then give each "letterBtn" the following classes: "letter-button" "letter" "letter-button-color".
+        //The classes make it so we are able to use them and target additional attributes
+        letterBtn.addClass("letter-button letter letter-button-color");
 
-    //Then we give letterBtns a text equal to letters[i]
-    letterBtn.text(letters[i]);
+        //* ADDING AN ATTRIBUTE /
+        //Now we are giving letterBtn a data-attribute called "data-letter".
+        letterBtn.attr("data-letter", letters[i]);
 
-    //Append each letterBtn to the #button div (provided)
-    $("#buttons").append(letterBtn)
+        //Then we give letterBtns a text equal to letters[i]
+        letterBtn.text(letters[i]);
+
+        //Append each letterBtn to the #button div (provided)
+        $("#buttons").append(letterBtn)
 
     }
 
     ///====================================
 
     //Create an onclick event attached to the letter-button classs
-    $(".letter-button").on("click", function() {
+    $(".letter-button").on("click", function () {
 
         //Inside the onclick event
-        
+
         //create a variable called "fridgeMagnet"and set the variable equal to a new div.
         var fridgeMagnet = $("<div>");
 
@@ -56,8 +56,8 @@ $(document).ready(function() {
     });
 
     //create an onclick event attached to the clear button
-    $("#clear").on("cliclk", function() {
-
+    $("#clear").on("click", function () {
+        console.log("clicked clear")
         //Inside the onclick event
 
         //Use the jQuery "empty()" method to clear the contents of the "#display" div.
